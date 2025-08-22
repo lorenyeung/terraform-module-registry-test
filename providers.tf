@@ -19,8 +19,6 @@ terraform {
   }
 }
 
-variable "harness_key"{}
-
 provider "github" {
   token = var.github_token
 }
