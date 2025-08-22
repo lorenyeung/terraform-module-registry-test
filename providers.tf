@@ -18,7 +18,6 @@ terraform {
     }
     aws = {
       source  = "registry.opentofu.org/hashicorp/aws"
-      version = "~> 5.0"
     }
 
   }
