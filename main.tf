@@ -1,5 +1,5 @@
 module "test-module-registry" {
-  source  = "loren.harness.io/WqS38aeyQjayoqy6mzwceA/test-module-registry-another/harness"
+  source  = "loren.harness.io/WqS38aeyQjayoqy6mzwceA/test-module-registry/harness"
   version = "v1.0.9"
 
   num_resources = 3
