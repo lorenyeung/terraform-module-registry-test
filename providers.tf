@@ -16,6 +16,11 @@ terraform {
     google = {
       source = "registry.opentofu.org/opentofu/google"
     }
+    aws = {
+      source  = "registry.opentofu.org/hashicorp/aws"
+      version = "~> 5.0"
+    }
+
   }
 }
 
@@ -27,4 +32,8 @@ provider "harness" {
   endpoint         = "https://app.harness.io/gateway"
   account_id       = "WqS38aeyQjayoqy6mzwceA"
   platform_api_key = var.harness_key
+}
+
+provider "aws" {
+  region = var.region
 }
