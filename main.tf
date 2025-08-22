@@ -7,4 +7,5 @@ module "test-module-registry" {
 
 module "karpenter" {
   source  = "loren.harness.io/WqS38aeyQjayoqy6mzwceA/eks/aws//modules/karpenter"
+  cluster_name    = "my-eks-cluster"
 }
